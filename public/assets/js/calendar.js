@@ -8,6 +8,7 @@ YUI().use('calendar', 'datatype-date', 'cssbutton', function (Y) {
   // the date to today's date.
   var calendar = new Y.Calendar({
     contentBox: "#mycalendar",
+    width: "250px",
     showPrevMonth: true,
     showNextMonth: true,
     date: new Date()
