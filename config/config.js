@@ -22,7 +22,7 @@ module.exports={
     }
   }
 
-const mysql = require("mysql");
+/*const mysql = require("mysql");
 
 let db;
 
@@ -34,7 +34,7 @@ else {
     host: "localhost",
     port: 3306,
     user: "root",
-    password: SQLpass,
+    password: SQL_PASS,
     database: "sequelize_json"
   });
 }
@@ -47,4 +47,4 @@ db.connect(err => {
 });
 
 module.exports = db;
-  
+  */
