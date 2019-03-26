@@ -3,6 +3,9 @@ const path = require('path');
 
 // only get to new posts
 router.route('/').get((req, res) => {
+  if (req.user) {
+    return res.redirect('/profile');
+  }
   res.sendFile(path.join(__dirname, '../../public/login.html'));
 });
 
