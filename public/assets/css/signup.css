@@ -1,0 +1,109 @@
+.jumbotron {
+  animation-delay: .2s;
+  border: 2.5px dotted mediumslateblue;
+  background-color: rgb(252, 252, 140);
+}
+
+h3 {
+  font-family:'Righteous', cursive;
+  color: mediumslateblue;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: grey;
+  background-color:white;
+}
+
+.jumboContainer {
+  border-radius: 10px;
+  background: #EEEBD1;
+  background: -moz-linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  background: -webkit-linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  background: linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  border: 4px double rgba(58, 22, 233, 0.36);
+  width: 65%;
+}
+
+.insideContainer {
+  border: 2.5px dotted mediumslateblue;
+  animation-delay: 1.5s;
+  width: 80%;
+}
+
+div {
+  border-radius: 10px;
+}
+
+.btn {
+  background-color:  mediumslateblue;
+  border-color: yellow;
+  color: white;
+}
+
+.btn-lg {
+  color: white;
+}
+
+.btn:hover { 
+  background-color:rgba(159, 144, 243, 0.863);
+  border-color: yellow;
+  color: yellow;
+  box-shadow: 55%;
+  font-weight: bolder;
+}
+
+.form-control:hover{
+  background-color: yellow;
+  opacity: .55;
+  color: black;
+  font-weight: bolder;
+  border: 2.5px dotted mediumslateblue;
+}
+
+option {
+  background-color: rgb(228, 202, 250);
+}
+
+select:hover {
+  background-color: rgb(76, 0, 255);
+}
+
+.text-align {
+  text-align: center;
+  color: mediumslateblue;
+  padding: 1%;
+}
+
+.text-align:hover {
+  border: 2.5px dotted mediumslateblue;
+  background-color: yellow;
+}
+
+.footer {
+  background-color:white;
+}
+
+.socIcon:hover {
+  background-color: rgb(252, 252, 140);
+  border-radius: 10px;
+  border: solid 3.5px rgb(97, 51, 156);
+  transition: border-width 0.6s linear;
+  border-radius: 10px;
+}
+
+#image {
+  max-height: 75px;
+}
+
+#image:hover {
+  background-color: rgb(252, 252, 140);
+  border-radius: 10px;
+  border: solid 3.5px rgb(97, 51, 156);
+  transition: border-width 0.6s linear;
+  border-radius: 10px;
+}
+/* font-family: 'Righteous', cursive; */
+/* font-family: 'Fahkwang', sans-serif; */
+/* font-family: 'Roboto Slab', serif;
+font-family: 'Poppins', sans-serif; */

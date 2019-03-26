@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Fahkwang|Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="assets/css/workout.css">
+  <title>Workout Form</title>
+</head>
+
+<body>
+  <nav class="navbar topBar mx-auto">
+    <div class="nav mx-auto">
+      <span style="font-size: 3rem;">
+        <div class="nav-item">
+          <a class="nav-link fas fa-address-card animated bounceInDown topIcons" style="color: yellow;" href="/"></a>
+        </div>
+    </div>
+    <div class="nav mx-auto">
+      <span style="font-size: 3rem;">
+        <div class="nav-item">
+          <a class="nav-link fas fa-sign-in-alt animated bounceInDown topIcons" style="color: yellow;" href="/login"></a>
+        </div>
+    </div>
+  </nav>
+
+  <div class="container animated bounceInDown my-5 shadow-lg">
+    <div class="row justify-content-center">
+      <div class="col-7">
+        <br>
+        <div class="text-center animated pulse infinite slower" id="createWo">
+          <h1>Create a new workout</h1>
+        </div>
+        <br>
+        <form id="workout-form">
+          <div class="form-group">
+            <label for="email">Date Of Workout</label>
+            <input required type="date" class="form-control" id="date-input">
+            <br>
+
+            <input type="text" class="form-control" id="exercise-name" placeholder="Name Your Workout">
+
+          </div>
+
+          
+
+          <!-- template for an exercise, we'll use this to clone -->
+          <div class="form-group exercise animated flipInY slow shadow-lg p-3 my-4" id="main-exercise">
+
+            <select type="text" class="mb-3 form-control muscle-group" id="muscle-group" placeholder="Muscle Group">
+              <option value="choose-muscle-group">Choose Muscle Group</option>
+              <option value="Chest">Chest</option>
+              <option value="Back">Back</option>
+              <option value="Shoulders">Shoulders</option>
+              <option value="Arms">Arms</option>
+              <option value="Legs">Legs</option>
+              <option value="Abdominal">Abdominal</option>
+            </select>
+
+
+            <select type="text" class="mb-3 form-control specific-exercise chest" id="chest" placeholder="Chest Exercises">
+              <option value="">Choose Chest Exercise</option>
+              <option value="Barbell Bench Press">Barbell Bench Press</option>
+              <option value="Flat Bench Dumbbell Press">Flat Bench Dumbbell Press</option>
+              <option value="Low Incline Barbell Bench Press">Low-Incline Barbell Bench Press</option>
+              <option value="Machine Decline Press">Machine-Decline Press</option>
+              <option value="Seated Machine Bench Press">Seated Machine Bench Press</option>
+            </select>
+            <select type="text" class="mb-3 form-control specific-exercise back" id="back" placeholder="Back Exercises">
+              <option value="">Choose Back Exercise</option>
+              <option value="Barbell Deadlift">Barbell Deadlift</option>
+              <option value="Bent-Over Barbell Deadlift">Bent-Over Barbell Deadlift</option>
+              <option value="Standing T Bar Row">Standing T-Bar Row</option>
+              <option value="Wide-Grip Pull-Up">Wide-Grip Pull-Up</option>
+              <option value="Wide-Grip Seated Cable Row">Wide-Grip Seated Cable Row</option>
+            </select>
+            <select type="text" class="mb-3 form-control specific-exercise shoulder" id="shoulder" placeholder="Shoulder Exercises">
+              <option value="">Choose Shoulder Exercise</option>
+              <option value="Arnold Press">Arnold Press</option>
+              <option value="Barbell Standing Press">Barbell Standing Press</option>
+              <option value="Lateral Raise">Lateral Raise</option>
+              <option value="Seated Dumbbell Press">Seated Dumbbell Press</option>
+              <option value="Upright Row">Upright Row</option>
+            </select>
+            <select type="text" class="mb-3 form-control specific-exercise arm" id="arm" placeholder="Arm Exercises">
+              <option value="">Choose Arm Exercise</option>
+              <option value="Chin-Up">Chin-Up</option>
+              <option value="Close Grip Curl">Close Grip Curl</option>
+              <option value="Dip">Dip</option>
+              <option value="Hammer Curl">Hammer Curl</option>
+              <option value="Nuetral-Grip Tricep Extension">Nuetral-Grip Tricep Extension</option>
+            </select>
+            <select type="text" class="mb-3 form-control specific-exercise leg" id="leg" placeholder="Leg Exercises">
+              <option value="">Choose Leg Exercise</option>
+              <option value="Deadlift">Deadlift</option>
+              <option value="Dumbbell-Squat">Dumbbell-Squat</option>
+              <option value="Front Squat">Front Squat</option>
+              <option value="High-Bar Squat">High-Bar Squat</option>
+              <option value="Low-Bar Squat">Low-Bar Squat</option>
+            </select>
+            <select type="text" class="mb-3 form-control specific-exercise abdominal" id="abdominal" placeholder="Abdominal Exercises">
+              <option value="">Choose Abdominal Exercise</option>
+              <option value="Ab Wheel Rollout">Ab Wheel Rollout</option>
+              <option value="Arms-High Partial Situp">Arms-High Partial Situp</option>
+              <option value="Barbell Rollout">Barbell Rollout</option>
+              <option value="Barbell Russian Twist">Barbell Russian Twist</option>
+              <option value="Dip-Leg Raise Combo">Dip-Leg Raise Combo</option>
+            </select>
+
+
+            <!-- begin set data -->
+            <div class="row mt-3 set-data">
+              <div class="input-group mb-3 col">
+                <input type="number" class="form-control reps" placeholder="How Many Reps?" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">Reps</span>
+                </div>
+              </div>
+              <div class="input-group mb-3 col">
+
+                <input type="number" class="form-control weight" placeholder="How many lbs?" aria-describedby="basic-addon2">
+
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">lbs</span>
+                </div>
+              </div>
+            </div>
+          
+            <!-- end set data -->
+
+            <button class="btn btn-block btn-secondary add-set">Add Set</button>
+
+          </div>
+          <div id="extra-exercise"></div>
+          <button class="btn btn-success btn-block mb-3" id="add-exercise">Add an exercise</button>
+          <div class="form-group  center-text">
+            <br>
+            <button type="submit" class="btn btn-block btn-lg justify-center">Submit Workout</button>
+            <br>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer shadow-lg">
+      <div class="container-fluid">
+        <div class="container-fluid">
+          <nav class="navbar mx-auto">
+            <div class="nav mx-auto">
+              <span style="font-size: 2.5rem;">
+                <div class="nav-item">
+                  <a class="nav-link fab fa-instagram socIcon" style="color:  Mediumslateblue;" href="https://www.instagram.com"></a>
+                </div>
+            </div>
+            <div class="nav mx-auto">
+              <span style="font-size: 2.5rem;">
+                <div class="nav-item">
+                  <a class="nav-link fab fa-facebook socIcon" style="color:  Mediumslateblue;" href="https://www.facebook.com"></a>
+                </div>
+            </div>
+            <div class="nav mx-auto">
+              <span style="font-size: 2.5rem;">
+                <div class="nav-item">
+                  <a class="nav-link fab fa-twitter-square socIcon" style="color:  Mediumslateblue;" href="https://www.twitter.com"></a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="/assets/js/workout.js"></script>
+</body>
+
+</html>

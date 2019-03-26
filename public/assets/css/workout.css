@@ -1,0 +1,100 @@
+
+.topIcons:hover {
+  background-color: rgb(80, 80, 75);
+  border-radius: 10px;
+  border: solid 3.5px rgb(243, 239, 21);
+  transition: border-width 0.6s linear;
+}
+
+.topBar {
+  background-color:  mediumslateblue;
+  opacity: .95;
+  border-radius: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: grey;
+  background-color: rgba(159, 144, 243, 0.13);
+}
+
+#createWo {
+  font-family:'Righteous', cursive;
+  color: mediumslateblue;
+}
+
+.container {
+  border-radius: 10px;
+  background: #EEEBD1;
+  background: -moz-linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  background: -webkit-linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  background: linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  border: 4px double rgba(58, 22, 233, 0.36);
+  width: 80%;
+}
+
+div {
+  border-radius: 10px;
+}
+
+.btn {
+  background-color:  mediumslateblue;
+  border-color: yellow;
+}
+
+.btn-lg {
+  color: white;
+}
+
+.btn:hover { 
+  background-color:rgba(159, 144, 243, 0.863);
+  border-color: yellow;
+  color: yellow;
+  box-shadow: 55%;
+  font-weight: bolder;
+}
+
+option value {
+  background-color:rgba(159, 144, 243, 0.863);
+}
+
+.form-control:hover{
+  background-color: yellow;
+  opacity: .55;
+  color: black;
+  font-weight: bolder;
+  border: 2.5px dotted mediumslateblue;
+}
+
+.muscle-group {
+  background-color: white;
+}
+
+.exercise {
+  border: 4px double rgba(58, 22, 233, 0.36);
+}
+
+option {
+  background-color: rgb(228, 202, 250);
+}
+
+select:hover {
+  background-color: rgb(76, 0, 255);
+}
+
+.footer {
+  background-color: rgba(159, 144, 243, 0.13);
+}
+
+.socIcon:hover {
+  background-color:rgba(194, 185, 250, 0.863);
+  border-radius: 10px;
+  border: solid 3.5px rgb(97, 51, 156);
+  transition: border-width 0.6s linear;
+  border-radius: 10px;
+}
+
+/* font-family: 'Righteous', cursive; */
+/* font-family: 'Fahkwang', sans-serif; */
+/* font-family: 'Roboto Slab', serif;
+font-family: 'Poppins', sans-serif; */

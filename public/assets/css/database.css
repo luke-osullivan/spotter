@@ -1,0 +1,102 @@
+.fixed-top {
+  background-color: rgb(253, 253, 253);
+  /* opacity: .95; */
+  border-radius: 10px;
+  border: 3%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: grey;
+  background-image: url(../images/tony-weight-logo-mediumslateblue.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: rgb(253, 253, 253);
+}
+
+.jumbotron-fluid {
+  background-color: rgb(253, 253, 253);
+}
+
+.banner {
+  font-weight: bolder;
+  font-stretch: extra-expanded;
+  opacity: .95;
+  font-size: 30px;
+  color: mediumslateblue;
+  background: #EEEBD1;
+  background: -moz-linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  background: -webkit-linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  background: linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  border: 6px double rgba(58, 22, 233, 0.36);
+  border-radius: 10px;
+  border: 2%;
+}
+
+img {
+  color: mediumslateblue;
+  background: #EEEBD1;
+  background: -moz-linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  background: -webkit-linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  background: linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  border: 4px double rgba(58, 22, 233, 0.36);
+  border-radius: 10px;
+  max-height: 200px;
+}
+
+.card {
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 2px;
+  background: #EEEBD1;
+  background: -moz-linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  background: -webkit-linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  background: linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
+  border: 2.5px dotted mediumslateblue;
+  
+}
+
+.col {
+  font-size: 15px;
+}
+
+h4 {
+  margin: 2%;
+}
+
+.topIcons:hover {
+  background-color: rgb(252, 248, 22);
+  border-radius: 10px;
+  border: solid 3.5px rgb(97, 51, 156);
+  transition: border-width 0.6s linear;
+}
+
+.footer {
+  background-color: mediumslateblue;
+  padding: 1.5%;
+  opacity: .95;
+  border-radius: 10px;
+}
+
+.card-footer  {
+  border: 2px dotted rgba(58, 22, 233, 0.36);
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.267);
+}
+
+.socIcon:hover {
+  background-color: rgb(80, 80, 75);
+  border-radius: 10px;
+  border: solid 3.5px rgb(243, 239, 21);
+  transition: border-width 0.6s linear;
+}
+
+.imageDiv {
+  border: 4px double rgba(58, 22, 233, 0.36);
+  border-radius: 10px;
+}
+
+
+
+/* font-family: 'Righteous', cursive; */
+/* font-family: 'Fahkwang', sans-serif; */

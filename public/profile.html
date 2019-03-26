@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Fahkwang|Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="./assets/css/profile.css">
+  <link rel="stylesheet" href="./assets/css/calendar.css">
+
+  <title>Your Profile</title>
+</head>
+
+<body>
+  <nav class="navbar fixed-top animated zoomInDown slow mx-auto">
+    <div class="nav mx-auto">
+      <span style="font-size: 3rem;">
+        <div class="nav-item">
+          <a class="nav-link fas fa-dumbbell topIcons" style="color: Mediumslateblue;" href="/workout-form"></a>
+        </div>
+    </div>
+    <div class="nav mx-auto">
+      <span style="font-size: 3rem;">
+        <div class="nav-item">
+          <a class="nav-link fas fa-sign-in-alt topIcons" style="color: Mediumslateblue;" href="/login"></a>
+        </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="jumbotron text-center shadow-lg animated fadeInLeftBig" id="jumbo">
+    <h1 class="display-4 animated pulse infinite slower" style="font-family: 'Righteous', cursive;" style="color: Mediumslateblue;"><a
+        id="LB">Spotter</a></h1>
+    <div>
+      <blockquote class="blockquote">
+        <p class="mb-0">Keep Track of Every Workout!</p>
+      </blockquote>
+    </div>
+  </div>
+  <div class="container-fluid animated fadeInRightBig">
+    <div class="card-deck animated pulse infinite slower">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <h3 class="card-title text-center">About Me</h3>
+          <br>
+          <div class="card shadow-lg imageDiv">
+            <img src="./assets/images/img_avatar.jpg" alt="Card image">
+            <div class="card-body shadow-lg">
+              <div class="userInfo">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer"></div>
+      </div>
+      <div class="card shadow-lg">
+        <div class="card-body" id="middle-card">
+
+          <h3 class="card-title text-center">Calendar</h3>
+          <br>
+          <div class="nav-item text-center">
+            <div class="container">
+              <div id="demo" class="yui3-skin-sam yui3-g">
+                <!-- You need this skin class -->
+
+                <div id="leftcolumn" class="yui3-u">
+                  <!-- Container for the calendar -->
+                  <div id="mycalendar"></div>
+                </div>
+                <div id="rightcolumn" class="yui3-u">
+                  <div id="links">
+                    <!-- The buttons are created simply by assigning the correct CSS class -->
+
+                    Selected date: <span id="selecteddate"></span>
+                    <div class="container">
+                        <p id="workout-name"></p>
+                        <p id="exercise-div"></p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+
+
+        </div>
+        <div class="card-footer"></div>
+      </div>
+      <div class="card shadow-lg">
+        <div class="card-body">
+
+          <h3 class="card-title text-center">Most Recent Workout</h3>
+
+          <br>
+          <h3 class="text-center name"></h3>
+          <h3 class="text-center dateDiv"></h3>
+          <div class="text-center center-div"></div>
+
+        </div>
+        <div class="card-footer"></div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <footer class="footer">
+    <div class="container">
+      <div class="container">
+        <nav class="navbar mx-auto">
+          <div class="nav mx-auto">
+            <span style="font-size: 2rem;">
+              <div class="nav-item">
+                <a class="nav-link fab fa-instagram socIcon" style="color: whitesmoke;" href="https://www.instagram.com"></a>
+              </div>
+          </div>
+          <div class="nav mx-auto">
+            <span style="font-size: 2rem;">
+              <div class="nav-item">
+                <a class="nav-link fab fa-facebook socIcon" style="color: whitesmoke;" href="https://www.facebook.com"></a>
+              </div>
+          </div>
+          <div class="nav mx-auto">
+            <span style="font-size: 2rem;">
+              <div class="nav-item">
+                <a class="nav-link fab fa-twitter-square socIcon" style="color: whitesmoke;" href="https://www.twitter.com"></a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="assets/js/profile.js"></script>
+  <script src="assets/js/calendar.js"></script>
+
+</body>
+
+</html>
