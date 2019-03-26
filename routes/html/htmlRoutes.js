@@ -7,7 +7,7 @@ router.route('/').get((req, res) => {
 });
 
 router.route('/register').get((req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/signup.html'));
+  res.sendFile(path.join(__dirname, '../../public/register.html'));
 });
 
 router.route('/login').get((req, res) => {
