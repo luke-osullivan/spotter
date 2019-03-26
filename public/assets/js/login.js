@@ -16,7 +16,7 @@ $(document).ready(function () {
         .then((userInfo) => {
           location.replace(userInfo)
         })
-        .catch(err => console.log(err));
+        .catch(err => console.log(err))
     });
   
   });
