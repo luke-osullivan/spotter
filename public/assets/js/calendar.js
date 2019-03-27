@@ -7,7 +7,7 @@ YUI().use('calendar', 'datatype-date', 'cssbutton', function (Y) {
   // dates in available empty cells to true, and setting
   // the date to today's date.
   var calendar = new Y.Calendar({
-    contentBox: "#demo",
+    contentBox: "#mycalendar",
     showPrevMonth: true,
     showNextMonth: true,
     date: new Date()
