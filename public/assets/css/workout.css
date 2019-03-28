@@ -94,6 +94,16 @@ select:hover {
   border-radius: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  #form-input .form-group{
+    width: 100%;
+  }
+
+  .jumboContainer {
+    align-items: center;
+  }
+}
+
 /* font-family: 'Righteous', cursive; */
 /* font-family: 'Fahkwang', sans-serif; */
 /* font-family: 'Roboto Slab', serif;

@@ -103,6 +103,22 @@ select:hover {
   transition: border-width 0.6s linear;
   border-radius: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  #signup-form .form-group{
+    width: 100%;
+  }
+
+  .display-3 {
+    font-family:'Righteous', cursive;
+    color: mediumslateblue;
+    font-size: 24pt;
+  }
+
+  .jumboContainer {
+    align-items: center;
+  }
+}
 /* font-family: 'Righteous', cursive; */
 /* font-family: 'Fahkwang', sans-serif; */
 /* font-family: 'Roboto Slab', serif;

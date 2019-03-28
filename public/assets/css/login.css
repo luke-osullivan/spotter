@@ -22,6 +22,7 @@ body {
   background: linear-gradient(45deg, #EEEBD1 0%, #F5F5F6 50%, #EADDEC 100%);
   border: 4px double rgba(58, 22, 233, 0.36);
   width: 80%;
+  align-content: center;
 }
 
 .insideContainer {
@@ -95,6 +96,15 @@ select:hover {
   border-radius: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  #workout-form .form-group .form-control{
+    width: 100%;
+  }
+
+  .jumboContainer {
+    align-items: center;
+  }
+}
 /* font-family: 'Righteous', cursive; */
 /* font-family: 'Fahkwang', sans-serif; */
 /* font-family: 'Roboto Slab', serif;
