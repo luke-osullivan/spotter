@@ -1,7 +1,7 @@
 {
     "development": {
       "username": "root",
-      "password": "dgi783aa",
+      "password": "SQL_PASS",
       "database": "sequelize_json",
       "host": "127.0.0.1",
       "dialect": "mysql"
